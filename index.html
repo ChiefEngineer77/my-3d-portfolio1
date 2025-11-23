@@ -8,17 +8,19 @@
             background: linear-gradient(45deg, #667eea, #764ba2);
             font-family: Arial; 
             text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .logo {
-            font-size: 48px;
+            font-size: 72px;
             font-weight: bold;
             color: white;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            animation: rotate3d 4s infinite linear;
-            margin: 50px 0;
-        }
-        .menu {
-            margin-top: 30px;
+            animation: complexRotate 5s infinite ease-in-out;
+            margin-bottom: 40px;
         }
         .menu a {
             display: block;
@@ -26,22 +28,28 @@
             text-decoration: none;
             margin: 15px 0;
             font-size: 20px;
+            transition: transform 0.3s;
         }
-        @keyframes rotate3d {
-            0% { transform: perspective(500px) rotateY(0deg); }
-            100% { transform: perspective(500px) rotateY(360deg); }
+        .menu a:hover {
+            transform: scale(1.1);
+        }
+        @keyframes complexRotate {
+            0% { transform: perspective(500px) rotateY(0deg) rotateX(0deg); }
+            25% { transform: perspective(500px) rotateY(90deg) rotateX(10deg); }
+            50% { transform: perspective(500px) rotateY(180deg) rotateX(0deg); }
+            75% { transform: perspective(500px) rotateY(270deg) rotateX(-10deg); }
+            100% { transform: perspective(500px) rotateY(360deg) rotateX(0deg); }
         }
     </style>
 </head>
 <body>
-    <div class="logo">3D Design Portfolio</div>
+    <div class="logo">CAD</div>
     <div class="menu">    
     <a href="Elewator.html">🏗️ Elevator Mechanism</a>
     <a href="Termoform.html">🔥 Thermoforming Machine</a>
     <a href="gearbox.html">⚙️ Gearbox Assembly</a>
     <a href="heat exchanger.html">🌡️ Heat Exchanger</a>
-    <a href="project solidworks power unit.html">🔋 Power Unit</a>
-    
+    <a href="project solidworks power unit.html">🔋 Power Unit</a>    
     </div>
 </body>
 </html>
