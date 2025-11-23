@@ -2,73 +2,19 @@
 <html>
 <head>
     <title>3D Engineering Portfolio</title>
-    <style>
-        body { 
-            margin: 0; 
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            font-family: Arial; 
-            text-align: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        .logo-container {
-            perspective: 1000px;
-            margin-bottom: 40px;
-        }
-        .logo {
-            font-size: 80px;
-            font-weight: bold;
-            color: #fff;
-            position: relative;
-            transform-style: preserve-3d;
-            animation: smoothRotate 8s infinite linear;
-        }
-        .logo::before {
-            content: 'CAD';
-            position: absolute;
-            color: rgba(255,255,255,0.3);
-            transform: translateZ(-15px);
-        }
-        .logo::after {
-            content: 'CAD';
-            position: absolute;
-            color: rgba(255,255,255,0.1);
-            transform: translateZ(-30px);
-        }
-        .menu a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            margin: 15px 0;
-            font-size: 20px;
-            transition: transform 0.3s;
-        }
-        .menu a:hover {
-            transform: scale(1.1);
-        }
-        @keyframes smoothRotate {
-            0% { transform: rotateY(0deg) rotateX(0deg); }
-            25% { transform: rotateY(90deg) rotateX(20deg); }
-            50% { transform: rotateY(180deg) rotateX(0deg); }
-            75% { transform: rotateY(270deg) rotateX(-20deg); }
-            100% { transform: rotateY(360deg) rotateX(0deg); }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="logo-container">
         <div class="logo">CAD</div>
     </div>
-    <div class="menu">    
-    <a href="Elewator.html">🏗️ Elevator Mechanism</a>
-    <a href="Termoform.html">🔥 Thermoforming Machine</a>
-    <a href="gearbox.html">⚙️ Gearbox Assembly</a>
-    <a href="heat exchanger.html">🌡️ Heat Exchanger</a>
-    <a href="project solidworks power unit.html">🔋 Power Unit</a>    
+    
+    <div class="menu">
+        <a href="Elewator.html">🏗️ Elevator Mechanism</a>
+        <a href="Termoform.html">🔥 Thermoforming Machine</a>
+        <a href="gearbox.html">⚙️ Gearbox Assembly</a>
+        <a href="heat%20exchanger.html">🌡️ Heat Exchanger</a>
+        <a href="project%20solidworks%20power%20unit.html">🔋 Power Unit</a>
     </div>
 
     <div class="cv-section">
