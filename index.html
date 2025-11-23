@@ -18,9 +18,15 @@
             font-size: 72px;
             font-weight: bold;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 
+                2px 2px 4px rgba(0,0,0,0.3),
+                0 0 20px rgba(255,255,255,0.5);
             animation: complexRotate 5s infinite ease-in-out;
             margin-bottom: 40px;
+            /* 3D толщина букв */
+            text-stroke: 2px #fff;
+            -webkit-text-stroke: 2px #fff;
+            paint-order: stroke fill;
         }
         .menu a {
             display: block;
@@ -34,11 +40,11 @@
             transform: scale(1.1);
         }
         @keyframes complexRotate {
-            0% { transform: perspective(500px) rotateY(0deg) rotateX(0deg); }
-            25% { transform: perspective(500px) rotateY(90deg) rotateX(10deg); }
-            50% { transform: perspective(500px) rotateY(180deg) rotateX(0deg); }
-            75% { transform: perspective(500px) rotateY(270deg) rotateX(-10deg); }
-            100% { transform: perspective(500px) rotateY(360deg) rotateX(0deg); }
+            0% { transform: perspective(500px) rotateY(0deg) rotateX(0deg) rotateZ(0deg); }
+            25% { transform: perspective(500px) rotateY(180deg) rotateX(30deg) rotateZ(10deg); }
+            50% { transform: perspective(500px) rotateY(360deg) rotateX(0deg) rotateZ(0deg); }
+            75% { transform: perspective(500px) rotateY(540deg) rotateX(-30deg) rotateZ(-10deg); }
+            100% { transform: perspective(500px) rotateY(720deg) rotateX(0deg) rotateZ(0deg); }
         }
     </style>
 </head>
